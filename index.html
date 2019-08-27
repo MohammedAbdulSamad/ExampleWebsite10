@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>A Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="10Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="hero">
+
+        </div>
+        <div class="header">
+            <div class="navigation">
+                <a href="">ABOUT</a>
+                <a href="">Services</a>
+                <span id="logo"><a href=""><img src="images/logo.png" alt="company logo"></a></span>
+                <a href="">CAREER</a>
+                <a href="">CONTACT</a>
+            </div>
+            <div class="navigationSmall">
+                <span id="logo"><a href=""><img src="images/logo.png" alt="company logo" style="width: 80px;" ></a></span>
+                <a href="javascript:void(0);" class="icon" onclick="dropListFunction()" ><i class="fa fa-bars"></i></a>
+                <ul id="dropList" class="smallNavDrop">
+                    <li><a href="">about</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">CAREER</a></li>
+                    <li><a href="">CONTACT</a></li>                 
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="container">
+            <div class="flex-center">
+
+                                   <div class="hero-title">Veronix Ava</div>
+                <div class="hero-sub-title">We create.</div>
+
+ 
+            </div>
+            
+        </div>     
+            
+ 
+        <script>
+            var check = false;
+                function dropListFunction() {
+                    var x = document.getElementById("dropList"); //.style.display = "block";
+                    if (check) {
+                        x.style.display = "none";
+                        check = false;
+                    } else {
+                        x.style.display = "block";
+                        check = true;
+                    }
+                }
+        </script>
+    </body>
+    
+</html>
